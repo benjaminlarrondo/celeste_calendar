@@ -125,6 +125,10 @@
 
     @media (max-width: 980px){
       .content{ grid-template-columns: 1fr; }
+      .side{
+        position: static;
+        top: auto;
+      }
     }
 
     .grid{
@@ -137,6 +141,40 @@
     }
     @media (max-width: 640px){
       .grid{ grid-template-columns: 1fr; }
+      .wrap{
+        padding: 12px 10px;
+      }
+      .content{
+        padding: 10px;
+        gap: 10px;
+      }
+      .controls{
+        justify-content:flex-start;
+      }
+      .chip{
+        width:100%;
+        justify-content:flex-start;
+      }
+      button, select, input[type="number"]{
+        min-height: 40px;
+      }
+      .day{
+        height: 38px;
+        font-size: 14px;
+      }
+      .month .mhead h2{
+        font-size: 13px;
+      }
+      .side .body{
+        padding: 10px;
+      }
+      .counterHead,
+      .counterRow{
+        font-size: 11px;
+      }
+      textarea{
+        min-height: 96px;
+      }
     }
 
     .month{
@@ -527,6 +565,7 @@
 <script>
 (() => {
   const STORAGE_KEY = "custodia_calendar_v1";
+  const BASE_STATE_FILE = "./archivo_base.json";
   const IMAGE_PLAN_YEAR = 2026;
   const MONTHS = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
   const DOW = ["L","M","X","J","V","S","D"];
@@ -577,6 +616,7 @@
   if (!state || state.year !== IMAGE_PLAN_YEAR) {
     state = makeDefaultPresetState(IMAGE_PLAN_YEAR);
   }
+  let baseFileState = null;
   let selected = null;
   let lastSelected = null;
   let lastCycleOwner = null;
@@ -604,6 +644,7 @@
 
   yearInput.value = state.year;
   renderYear(state.year);
+  initializeFromBaseFile();
 
   const t = new Date();
   if (t.getFullYear() === state.year) {
@@ -613,7 +654,9 @@
 
   yearInput.addEventListener("change", () => {
     const y = clamp(parseInt(yearInput.value, 10) || IMAGE_PLAN_YEAR, 2000, 2100);
-    state = (y === IMAGE_PLAN_YEAR) ? makeDefaultPresetState(y) : makeEmptyState(y);
+    state = (y === IMAGE_PLAN_YEAR)
+      ? (baseFileState ? cloneState(baseFileState) : makeDefaultPresetState(y))
+      : makeEmptyState(y);
     persist();
     renderYear(y);
     selected = null;
@@ -703,7 +746,9 @@
     if (!confirm("¿Seguro? Esto borrará todo lo guardado en este navegador para este calendario.")) return;
     localStorage.removeItem(STORAGE_KEY);
     const y = parseInt(yearInput.value, 10) || IMAGE_PLAN_YEAR;
-    state = (y === IMAGE_PLAN_YEAR) ? makeDefaultPresetState(y) : makeEmptyState(y);
+    state = (y === IMAGE_PLAN_YEAR)
+      ? (baseFileState ? cloneState(baseFileState) : makeDefaultPresetState(y))
+      : makeEmptyState(y);
     persist();
     renderYear(state.year);
     selected = null;
@@ -990,6 +1035,31 @@
     }
   }
 
+  async function initializeFromBaseFile(){
+    try{
+      const res = await fetch(BASE_STATE_FILE, { cache: "no-store" });
+      if (!res.ok) throw new Error("No se encontró archivo_base.json");
+      const obj = await res.json();
+      const parsed = sanitizeState(obj);
+      if (!parsed || parsed.year !== IMAGE_PLAN_YEAR) {
+        throw new Error("archivo_base.json no corresponde al año base");
+      }
+      baseFileState = parsed;
+      state = cloneState(parsed);
+      yearInput.value = state.year;
+      persist();
+      renderYear(state.year);
+      selected = null;
+      lastSelected = null;
+      refreshSidePanel();
+      renderMonthlyCounter();
+      statusEl.textContent = "Base cargada desde archivo_base.json ✅";
+      toastMsg("Base 2026 cargada");
+    }catch(e){
+      statusEl.textContent = "Usando base local ⚠️";
+    }
+  }
+
   function sanitizeState(obj){
     const year = clamp(parseInt(obj.year,10) || IMAGE_PLAN_YEAR, 2000, 2100);
     const days = (obj.days && typeof obj.days === "object") ? obj.days : {};
@@ -1021,6 +1091,10 @@
       }
     }
     return base;
+  }
+
+  function cloneState(obj){
+    return JSON.parse(JSON.stringify(obj));
   }
 
   function getOwner(iso){
