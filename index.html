@@ -57,7 +57,16 @@
     }
 
     .title{
-      display:flex; align-items:baseline; gap:10px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:4px;
+    }
+    .titleLine{
+      display:flex;
+      align-items:baseline;
+      gap:10px;
+      flex-wrap:wrap;
     }
     .title h1{
       font-size: 18px; margin:0;
@@ -65,6 +74,31 @@
     }
     .title small{
       color:var(--muted);
+    }
+    .baseMeta{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:12px;
+      color:var(--muted);
+      flex-wrap:wrap;
+    }
+    .baseMeta code{
+      background: var(--panel2);
+      border:1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 2px 6px;
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 11px;
+    }
+    .baseMeta a{
+      color:#0f766e;
+      text-decoration:none;
+      border-bottom:1px solid #99f6e4;
+    }
+    .baseMeta a:hover{
+      text-decoration:underline;
     }
 
     .controls{
@@ -150,6 +184,9 @@
       }
       .controls{
         justify-content:flex-start;
+      }
+      .baseMeta{
+        align-items:flex-start;
       }
       .chip{
         width:100%;
@@ -469,8 +506,15 @@
     <div class="wrap">
       <div class="topbar">
         <div class="title">
-          <h1>Calendario de Custodia</h1>
-          <small id="status">Guardado local ✅</small>
+          <div class="titleLine">
+            <h1>Calendario de Custodia</h1>
+            <small id="status">Guardado local ✅</small>
+          </div>
+          <div class="baseMeta">
+            <span id="baseInfo">Base compartida: pendiente</span>
+            <code id="basePath">archivo_base.json</code>
+            <a id="baseLink" href="./archivo_base.json" target="_blank" rel="noopener noreferrer">Abrir base</a>
+          </div>
         </div>
 
         <div class="controls">
@@ -624,6 +668,9 @@
   const monthsGrid = document.getElementById("monthsGrid");
   const yearInput = document.getElementById("yearInput");
   const statusEl = document.getElementById("status");
+  const baseInfoEl = document.getElementById("baseInfo");
+  const basePathEl = document.getElementById("basePath");
+  const baseLinkEl = document.getElementById("baseLink");
   const selTitle = document.getElementById("selTitle");
   const selDate = document.getElementById("selDate");
   const setMineBtn = document.getElementById("setMineBtn");
@@ -644,6 +691,7 @@
 
   yearInput.value = state.year;
   renderYear(state.year);
+  setBaseUi("Cargando base compartida...", false);
   initializeFromBaseFile();
 
   const t = new Date();
@@ -1037,7 +1085,8 @@
 
   async function initializeFromBaseFile(){
     try{
-      const res = await fetch(BASE_STATE_FILE, { cache: "no-store" });
+      const baseUrl = new URL(BASE_STATE_FILE, window.location.href).href;
+      const res = await fetch(baseUrl, { cache: "no-store" });
       if (!res.ok) throw new Error("No se encontró archivo_base.json");
       const obj = await res.json();
       const parsed = sanitizeState(obj);
@@ -1054,9 +1103,11 @@
       refreshSidePanel();
       renderMonthlyCounter();
       statusEl.textContent = "Base cargada desde archivo_base.json ✅";
+      setBaseUi("Base compartida activa para todos", true, baseUrl);
       toastMsg("Base 2026 cargada");
     }catch(e){
       statusEl.textContent = "Usando base local ⚠️";
+      setBaseUi("No se pudo cargar archivo_base.json", false);
     }
   }
 
@@ -1095,6 +1146,14 @@
 
   function cloneState(obj){
     return JSON.parse(JSON.stringify(obj));
+  }
+
+  function setBaseUi(label, loaded, url){
+    baseInfoEl.textContent = label;
+    const finalUrl = url || BASE_STATE_FILE;
+    basePathEl.textContent = finalUrl;
+    baseLinkEl.href = finalUrl;
+    baseLinkEl.textContent = loaded ? "Abrir base (misma fuente)" : "Abrir base";
   }
 
   function getOwner(iso){
