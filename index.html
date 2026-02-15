@@ -661,6 +661,7 @@
 (() => {
   const STORAGE_KEY = "custodia_calendar_v1";
   const BASE_STATE_FILE = "./archivo_base.json";
+  const API_BASE_URL = "https://calendar-api.benjaminlarrondo.workers.dev";
   const IMAGE_PLAN_YEAR = 2026;
   const MONTHS = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
   const DOW = ["L","M","X","J","V","S","D"];
@@ -747,7 +748,7 @@
   yearInput.value = state.year;
   renderYear(state.year);
   setBaseUi("Cargando base compartida...", false);
-  initializeFromBaseFile();
+  initializeDataSources();
 
   const t = new Date();
   if (t.getFullYear() === state.year) {
@@ -824,14 +825,28 @@
     toastMsg("Exportado ✅");
   });
 
-  saveBtn.addEventListener("click", () => {
-    const stamp = formatDateForFilename(new Date());
-    const filename = `custodia_${state.year}_${stamp}.json`;
-    downloadStateAsJson(filename);
-    const shown = formatDateForHumans(new Date());
-    baseSavedEl.textContent = `Último guardado: ${shown} (${filename})`;
-    setBaseUi(baseInfoEl.textContent, true, baseLinkEl.href);
-    toastMsg("Guardado: " + filename);
+  saveBtn.addEventListener("click", async () => {
+    saveBtn.disabled = true;
+    try{
+      const res = await apiSaveState(state, "benja");
+      const shown = formatDateForHumans(new Date(res.latest.updated_at || Date.now()));
+      baseSavedEl.textContent = `Último guardado online: ${shown} (${res.versionPath})`;
+      setBaseUi("Base compartida activa para todos", true, new URL(res.latest.current, window.location.href).href);
+      statusEl.textContent = "Guardado online en GitHub ✅";
+      persist();
+      toastMsg("Guardado online ✅");
+    }catch(e){
+      // Fallback local para no perder cambios si API falla
+      const stamp = formatDateForFilename(new Date());
+      const filename = `custodia_${state.year}_${stamp}.json`;
+      downloadStateAsJson(filename);
+      const shown = formatDateForHumans(new Date());
+      baseSavedEl.textContent = `Fallback local: ${shown} (${filename})`;
+      statusEl.textContent = "Guardado local (falló online) ⚠️";
+      toastMsg("API falló, descargado local");
+    } finally {
+      saveBtn.disabled = false;
+    }
   });
 
   importBtn.addEventListener("click", () => fileInput.click());
@@ -1157,6 +1172,41 @@
     }
   }
 
+  async function initializeDataSources(){
+    const onlineOk = await initializeFromRemoteLatest();
+    if (!onlineOk) await initializeFromBaseFile();
+  }
+
+  async function initializeFromRemoteLatest(){
+    try{
+      const res = await fetch(`${API_BASE_URL}/latest`, { cache: "no-store" });
+      if (!res.ok) throw new Error("No se pudo cargar latest");
+      const payload = await res.json();
+      const parsed = sanitizeState(payload.state);
+      if (!parsed || parsed.year !== IMAGE_PLAN_YEAR) throw new Error("latest no coincide con año base");
+      baseFileState = parsed;
+      state = cloneState(parsed);
+      yearInput.value = state.year;
+      persist();
+      renderYear(state.year);
+      selected = null;
+      lastSelected = null;
+      refreshSidePanel();
+      renderMonthlyCounter();
+      renderCurrentMonthNotes();
+      statusEl.textContent = "Base cargada desde GitHub (latest) ✅";
+      setBaseUi("Base compartida activa para todos", true, payload.latest.current);
+      if (payload.latest?.updated_at) {
+        const shown = formatDateForHumans(new Date(payload.latest.updated_at));
+        baseSavedEl.textContent = `Último guardado online: ${shown} (${payload.latest.current})`;
+      }
+      toastMsg("Base online cargada");
+      return true;
+    }catch(e){
+      return false;
+    }
+  }
+
   async function initializeFromBaseFile(){
     try{
       const baseUrl = new URL(BASE_STATE_FILE, window.location.href).href;
@@ -1176,6 +1226,7 @@
       lastSelected = null;
       refreshSidePanel();
       renderMonthlyCounter();
+      renderCurrentMonthNotes();
       statusEl.textContent = "Base cargada desde archivo_base.json ✅";
       setBaseUi("Base compartida activa para todos", true, baseUrl);
       toastMsg("Base 2026 cargada");
@@ -1183,6 +1234,23 @@
       statusEl.textContent = "Usando base local ⚠️";
       setBaseUi("No se pudo cargar archivo_base.json", false);
     }
+  }
+
+  async function apiSaveState(currentState, savedBy){
+    const res = await fetch(`${API_BASE_URL}/save`, {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({
+        year: currentState.year,
+        days: currentState.days,
+        saved_by: savedBy || "web"
+      })
+    });
+    if (!res.ok) {
+      const txt = await res.text();
+      throw new Error(`API save error: ${res.status} ${txt}`);
+    }
+    return res.json();
   }
 
   function sanitizeState(obj){

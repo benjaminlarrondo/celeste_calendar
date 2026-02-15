@@ -1,0 +1,9 @@
+name = "calendar-api"
+main = "src/index.js"
+compatibility_date = "2026-02-15"
+
+[vars]
+GH_OWNER = "REEMPLAZAR_USUARIO_GITHUB"
+GH_REPO = "celeste_calendar"
+GH_BRANCH = "main"
+ALLOWED_ORIGIN = "https://REEMPLAZAR_USUARIO_GITHUB.github.io"
