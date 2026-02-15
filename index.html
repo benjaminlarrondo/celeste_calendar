@@ -836,14 +836,11 @@
       persist();
       toastMsg("Guardado online ✅");
     }catch(e){
-      // Fallback local para no perder cambios si API falla
-      const stamp = formatDateForFilename(new Date());
-      const filename = `custodia_${state.year}_${stamp}.json`;
-      downloadStateAsJson(filename);
+      console.error("Error al guardar online:", e);
       const shown = formatDateForHumans(new Date());
-      baseSavedEl.textContent = `Fallback local: ${shown} (${filename})`;
-      statusEl.textContent = "Guardado local (falló online) ⚠️";
-      toastMsg("API falló, descargado local");
+      baseSavedEl.textContent = `Error de guardado online: ${shown}`;
+      statusEl.textContent = "Error al guardar online ⚠️";
+      toastMsg("No se guardó online. Revisa backend/API.");
     } finally {
       saveBtn.disabled = false;
     }
@@ -1180,7 +1177,10 @@
   async function initializeFromRemoteLatest(){
     try{
       const res = await fetch(`${API_BASE_URL}/latest`, { cache: "no-store" });
-      if (!res.ok) throw new Error("No se pudo cargar latest");
+      if (!res.ok) {
+        const txt = await res.text();
+        throw new Error(`No se pudo cargar latest: ${res.status} ${txt}`);
+      }
       const payload = await res.json();
       const parsed = sanitizeState(payload.state);
       if (!parsed || parsed.year !== IMAGE_PLAN_YEAR) throw new Error("latest no coincide con año base");
@@ -1203,6 +1203,7 @@
       toastMsg("Base online cargada");
       return true;
     }catch(e){
+      console.warn("No se pudo cargar base online:", e);
       return false;
     }
   }
