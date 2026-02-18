@@ -1,0 +1,1616 @@
+{
+  "version": 1,
+  "year": 2026,
+  "days": {
+    "2026-02-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-16": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-22": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-26": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-28": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-01": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-18": {
+      "owner": "hers",
+      "exception": false,
+      "note": "charo pidio cambio de dia"
+    },
+    "2026-03-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": "Entra a clases la tete"
+    },
+    "2026-03-05": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-02": {
+      "owner": "hers",
+      "exception": false,
+      "note": "Vacaciones Celeste"
+    },
+    "2026-03-04": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-07": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-08": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-09": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-10": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-12": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": "Lolla"
+    },
+    "2026-03-14": {
+      "owner": "hers",
+      "exception": false,
+      "note": "Lolla"
+    },
+    "2026-03-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": "Lolla"
+    },
+    "2026-03-28": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-16": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-18": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-22": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-17": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-23": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-26": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-30": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-31": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-01": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-02": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-04": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-05": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-14": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-08": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-10": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-12": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-14": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-16": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-26": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-07": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-09": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-21": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-22": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-23": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-28": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-29": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-30": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-01": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-02": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-08": {
+      "owner": "mine",
+      "exception": false,
+      "note": "Korn"
+    },
+    "2026-05-09": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-10": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-16": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-22": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-23": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-29": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-30": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-31": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": "pennywise"
+    },
+    "2026-04-25": {
+      "owner": "mine",
+      "exception": false,
+      "note": "bad religion"
+    },
+    "2026-06-22": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-23": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-24": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-26": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-28": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-05": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-07": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-12": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-14": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-29": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-30": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-01": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-02": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-03": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-04": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-05": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-04": {
+      "owner": "mine",
+      "exception": false,
+      "note": "megadeath"
+    },
+    "2026-05-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-12": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-14": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-18": {
+      "owner": "mine",
+      "exception": false,
+      "note": "despues del cole ???"
+    },
+    "2026-05-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-26": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-28": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-05": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-07": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-19": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-21": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-05-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-06": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-08": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-10": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-12": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-17": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-18": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-31": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-01": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-02": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-14": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-15": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-16": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-28": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-29": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-30": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-11": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-12": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-13": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-25": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-26": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-27": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-04": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-16": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-18": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-31": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-16": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-18": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-19": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-20": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-14": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-21": {
+      "owner": "hers",
+      "exception": false,
+      "note": "vacaciones benja"
+    },
+    "2026-09-22": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-28": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-29": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-30": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-02": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-01": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-10": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-09": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-11": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-04": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-05": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-06": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-23": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-25": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-01": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-30": {
+      "owner": "hers",
+      "exception": false,
+      "note": "hallowen charo el año pasado fue mio"
+    },
+    "2026-11-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-07": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-08": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-22": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-14": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-28": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-29": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-04": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-05": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-12": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-18": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-26": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-07": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-09": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-13": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-15": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-14": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-16": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-24": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-26": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-23": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-27": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-29": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-20": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-22": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-28": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-07-30": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-07": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-08": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-09": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-21": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-22": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-23": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-05": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-04": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-06": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-10": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-12": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-18": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-20": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-26": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-13": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-19": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-08-31": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-01": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-03": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-02": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-07": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-09": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-08": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-10": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-05": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-07": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-13": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-15": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-27": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-29": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-06": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-08": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-12": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-14": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-20": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-22": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-26": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-10-28": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-02": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-04": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-10": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-12": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-16": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-18": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-24": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-26": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-30": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-02": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-05": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-09": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-11": {
+      "owner": "hers",
+      "exception": false,
+      "note": "opeth"
+    },
+    "2026-11-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-19": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-23": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-11-25": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-01": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-03": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-09": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-11": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-15": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-17": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-02": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-04": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-08": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-10": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-16": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-06-18": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-01": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-03": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-07": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-08": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-10": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-09": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-14": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-16": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-22": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-28": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-30": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-15": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-17": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-29": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-31": {
+      "owner": "mine",
+      "exception": false,
+      "note": "año nuevo charo"
+    },
+    "2026-02-25": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-02-23": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-17": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-18": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-04-19": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-27": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-03-29": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-24": {
+      "owner": "hers",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-23": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-12-21": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    },
+    "2026-09-23": {
+      "owner": "mine",
+      "exception": false,
+      "note": ""
+    }
+  },
+  "meta": {
+    "saved_at": "2026-02-18T00:23:45.667Z",
+    "saved_by": "benja",
+    "source": "cloudflare-worker"
+  }
+}
